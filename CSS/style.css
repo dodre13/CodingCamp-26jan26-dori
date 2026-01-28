@@ -1,0 +1,124 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body { margin: 0; padding: 0; color: #333; }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* Banner */
+header { padding: 40px 50px; }
+.hero-image {
+    width: 100%;
+    height: 300px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+/* Headquarters */
+.headquarters { text-align: center; padding: 50px; border-top: double #ccc; }
+.hq-container { display: flex; justify-content: center; gap: 50px; margin-top: 30px; }
+.circle {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+/* Form & Display */
+.message-us {
+    padding: 40px 5%;
+    border-top: 1px solid #000;
+}
+
+.main-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.form-container, .result-container {
+    flex: 1;
+}
+
+/* Styling Baris Input */
+.input-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    width: 120px;
+    font-weight: bold;
+}
+
+.separator {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="date"], textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Kotak Hasil */
+.result-box {
+    border: 1px solid #000;
+    padding: 20px;
+    min-height: 250px;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+footer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: right;
+    color: #000;
+} 
+
+/* Responsif Mobile */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
