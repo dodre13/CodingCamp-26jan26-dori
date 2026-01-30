@@ -3,32 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile - RevoU Project</title>
+    <title>Portofolio Dori</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <nav>
-        <div class="logo">
-            <img src="Logo_revou.png" alt="Logo" width="50">
-        </div>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Our Profile</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Message Us</a>
-        </div>
-    </nav>
-
-    <header>
-        <div class="banner-content">
-            <h1 id="welcome-title">Hi <span id="display-name">Dori</span>, Welcome To Website</h1>
-            <p>Ini adalah website latihan pertama</p>
-        </div>
-        <div class="hero-image">1366x578</div>
+<body>   
+    <header class="main-header p-[8px]">
+        <!-- Logo -->
+        <div class="logo"></div>
+    <!-- Navigation Menu -->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
     </header>
+    <hr>
+
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <hr />
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">About Dori Company</h2>
+            <p class="mt-2">Dori Company is dedicated to providing top-notch services in various domains.</p>
+        </section>
+
+        <hr />
 
     <section class="headquarters">
-        <h2>Our Headquarter</h2>
+        <!-- Portfolio Page -->
+        <section id="portfolio-page" class="min-h-[500px] mx-8">
+            <h2 class="text-xl font-bold">Our Portfolio</h2>
+            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+        </section>
         <div class="hq-container">
             <div class="hq-item">
                 <div class="circle"></div>
@@ -44,9 +60,16 @@
             </div>
         </div>
     </section>
+        <hr />
 
     <section class="message-us">
-    <h2>Message Us</h2>
+    <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
+                    promptly.</p>
+            </header>
     <div class="main-container">
         <div class="form-container">
             <form id="messageForm">
@@ -93,7 +116,9 @@
 </section>
 
     <footer>
-        <p>Created by RevoU</p>
+        <div class="text-center p-4">
+            &copy; 2026 Dori Company. All rights reserved.
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

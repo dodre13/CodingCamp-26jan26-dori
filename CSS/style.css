@@ -6,22 +6,19 @@
 
 body { margin: 0; padding: 0; color: #333; }
 
-/* Navigation */
-nav {
+.logo {
+    height: 75px;
+    width: 75px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+.main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
-    border-bottom: 1px solid #ccc;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 15px;
-    border: 1px solid #ccc;
-    margin-left: 5px;
-    font-size: 14px;
 }
 
 /* Banner */

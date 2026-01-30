@@ -1,13 +1,19 @@
-// Fungsi Welcoming Speech "Hi Name"
-function replaceName() {
-    let name = prompt("Siapa nama anda?", "");
-    if (name !== null && name !== "") {
-        document.getElementById("display-name").innerText = name;
-    }
-}
+// JavaScript to display a welcome message to the user
+welcomeMessage();
 
-// Jalankan fungsi ganti nama saat pertama kali load
-replaceName();
+// Function to display a welcome message to the user
+function welcomeMessage() {
+    // Prompt the user for their name
+    let userResponse = prompt("Welcome to Dori Company! What is your name?");
+
+    // Handle case where user cancels or enters an empty name
+    if (userResponse === null || userResponse.trim() === "") {
+        userResponse = "Guest";
+    }
+
+    // Display the welcome message
+    document.getElementById("welcome-speech").innerText = `Hello, ${userResponse}! Welcome to Dori Company.`;
+}
 
 // Validasi Form dan Menampilkan Hasil
 const form = document.getElementById('messageForm');
