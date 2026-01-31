@@ -15,6 +15,9 @@ function welcomeMessage() {
     document.getElementById("welcome-speech").innerText = `Hello, ${userResponse}! Welcome to Dori Company.`;
 }
 
+// Function to handle message submission (currently empty)
+
+function submitMessage() { }
 // Validasi Form dan Menampilkan Hasil
 const form = document.getElementById('messageForm');
 
